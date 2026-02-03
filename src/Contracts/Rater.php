@@ -1,6 +1,6 @@
 <?php
 
-namespace Rennokki\Rating\Contracts;
+namespace Jodeveloper\Rating\Contracts;
 
 interface Rater
 {

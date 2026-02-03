@@ -1,11 +1,11 @@
 <?php
 
-namespace Rennokki\Rating\Test\Models;
+namespace Jodeveloper\Rating\Test\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Rennokki\Rating\Contracts\Rating;
-use Rennokki\Rating\Traits\CanBeRated;
-use Rennokki\Rating\Traits\CanRate;
+use Jodeveloper\Rating\Contracts\Rating;
+use Jodeveloper\Rating\Traits\CanBeRated;
+use Jodeveloper\Rating\Traits\CanRate;
 
 class Page extends Model implements Rating
 {

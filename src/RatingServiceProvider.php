@@ -1,6 +1,6 @@
 <?php
 
-namespace Rennokki\Rating;
+namespace Jodeveloper\Rating;
 
 use Illuminate\Support\ServiceProvider;
 

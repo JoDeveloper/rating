@@ -1,10 +1,10 @@
 <?php
 
-namespace Rennokki\Rating\Test;
+namespace Jodeveloper\Rating\Test;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use Rennokki\Rating\Models\RaterModel;
-use Rennokki\Rating\Test\Models\User;
+use Jodeveloper\Rating\Models\RaterModel;
+use Jodeveloper\Rating\Test\Models\User;
 
 abstract class TestCase extends Orchestra
 {
@@ -36,7 +36,7 @@ abstract class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            \Rennokki\Rating\RatingServiceProvider::class,
+            \Jodeveloper\Rating\RatingServiceProvider::class,
         ];
     }
 

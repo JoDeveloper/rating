@@ -1,11 +1,11 @@
 <?php
 
-namespace Rennokki\Rating\Test\Models;
+namespace Jodeveloper\Rating\Test\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Rennokki\Rating\Contracts\Rating;
-use Rennokki\Rating\Traits\CanBeRated;
-use Rennokki\Rating\Traits\CanRate;
+use Jodeveloper\Rating\Contracts\Rating;
+use Jodeveloper\Rating\Traits\CanBeRated;
+use Jodeveloper\Rating\Traits\CanRate;
 
 class User extends Authenticatable implements Rating
 {

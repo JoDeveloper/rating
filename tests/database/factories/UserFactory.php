@@ -13,7 +13,7 @@ use Illuminate\Support\Str;
 |
 */
 
-$factory->define(\Rennokki\Rating\Test\Models\User::class, function () {
+$factory->define(\Jodeveloper\Rating\Test\Models\User::class, function () {
     return [
         'name'           => 'Name'.Str::random(5),
         'email'          => Str::random(5).'@gmail.com',

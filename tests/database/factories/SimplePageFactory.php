@@ -13,7 +13,7 @@ use Illuminate\Support\Str;
 |
 */
 
-$factory->define(\Rennokki\Rating\Test\Models\SimplePage::class, function () {
+$factory->define(\Jodeveloper\Rating\Test\Models\SimplePage::class, function () {
     return [
         'name' => 'Page'.Str::random(5),
     ];

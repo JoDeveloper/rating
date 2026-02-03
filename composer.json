@@ -1,5 +1,5 @@
 {
-    "name": "rennokki/rating",
+    "name": "jodeveloper/rating",
     "description": "Laravel Eloquent Rating allows you to assign ratings to any model.",
     "keywords": [
         "eloquent",
@@ -34,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Rennokki\\Rating\\": "src"
+            "Jodeveloper\\Rating\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rennokki\\Rating\\Test\\": "tests"
+            "Jodeveloper\\Rating\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -48,7 +48,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Rennokki\\Rating\\RatingServiceProvider"
+                "Jodeveloper\\Rating\\RatingServiceProvider"
             ]
         }
     },

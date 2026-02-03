@@ -1,6 +1,6 @@
 <?php
 
-namespace Rennokki\Rating\Traits;
+namespace Jodeveloper\Rating\Traits;
 
 trait CanBeRated
 {

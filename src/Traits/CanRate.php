@@ -1,9 +1,9 @@
 <?php
 
-namespace Rennokki\Rating\Traits;
+namespace Jodeveloper\Rating\Traits;
 
-use Rennokki\Rating\Contracts\Rateable;
-use Rennokki\Rating\Contracts\Rating;
+use Jodeveloper\Rating\Contracts\Rateable;
+use Jodeveloper\Rating\Contracts\Rating;
 
 trait CanRate
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Rennokki\Rating\Test;
+namespace Jodeveloper\Rating\Test;
 
-use Rennokki\Rating\Test\Models\Page;
-use Rennokki\Rating\Test\Models\User;
+use Jodeveloper\Rating\Test\Models\Page;
+use Jodeveloper\Rating\Test\Models\User;
 
 class RatingTest extends TestCase
 {
@@ -17,11 +17,11 @@ class RatingTest extends TestCase
     {
         parent::setUp();
 
-        $this->user = factory(\Rennokki\Rating\Test\Models\User::class)->create();
-        $this->user2 = factory(\Rennokki\Rating\Test\Models\User::class)->create();
-        $this->user3 = factory(\Rennokki\Rating\Test\Models\User::class)->create();
-        $this->page = factory(\Rennokki\Rating\Test\Models\Page::class)->create();
-        $this->simplePage = factory(\Rennokki\Rating\Test\Models\SimplePage::class)->create();
+        $this->user = factory(\Jodeveloper\Rating\Test\Models\User::class)->create();
+        $this->user2 = factory(\Jodeveloper\Rating\Test\Models\User::class)->create();
+        $this->user3 = factory(\Jodeveloper\Rating\Test\Models\User::class)->create();
+        $this->page = factory(\Jodeveloper\Rating\Test\Models\Page::class)->create();
+        $this->simplePage = factory(\Jodeveloper\Rating\Test\Models\SimplePage::class)->create();
     }
 
     public function testNoImplements()
@@ -207,6 +207,6 @@ class RatingTest extends TestCase
         $this->user3->rate($this->page, 5.77);
 
         $this->assertEquals($this->page->averageRating(), 0.00);
-        $this->assertEquals($this->page->averageRating(User::class), ((7.43 + 3.15 + 5.77) / 3));
+        $this->assertEqualsWithDelta($this->page->averageRating(User::class), ((7.43 + 3.15 + 5.77) / 3), 0.01);
     }
 }

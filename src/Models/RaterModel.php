@@ -1,6 +1,6 @@
 <?php
 
-namespace Rennokki\Rating\Models;
+namespace Jodeveloper\Rating\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
